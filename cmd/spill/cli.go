@@ -18,6 +18,9 @@ func Cli() *cli.App {
 		},
 	}
 
+	config := ReadConfig()
+	fmt.Printf("Using config:\n%+v\n", config)
+
 	app.Commands = []cli.Command{
 		{
 			Name:  "pull",
