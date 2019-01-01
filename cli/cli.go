@@ -1,8 +1,9 @@
-package main
+package cli
 
 import (
 	"fmt"
 
+	"github.com/tjmw/spill/config"
 	"github.com/urfave/cli"
 )
 
@@ -18,7 +19,7 @@ func Cli() *cli.App {
 		},
 	}
 
-	config := ReadConfig()
+	config := config.ReadConfig()
 	fmt.Printf("Using config:\n%+v\n", config)
 
 	app.Commands = []cli.Command{

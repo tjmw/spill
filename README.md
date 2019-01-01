@@ -31,3 +31,9 @@ spill push .env.staging
 In both cases if there are differences between the local version and the
 version in 1Password a diff will be displayed and confirmation requested before
 syncing.
+
+## Running Locally
+
+```sh
+go run spill.go <subcommand>
+```
